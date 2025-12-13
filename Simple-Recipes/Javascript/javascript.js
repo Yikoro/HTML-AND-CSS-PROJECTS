@@ -15,6 +15,9 @@ for (var i = 0; i <btns.length; i++) {
         modal = document.querySelector(event.target.getAttribute
         ("href"));
         modal.style.display = "block";
+        setTimeout(function() {
+            modal.style.display = "none";
+        }, 10000);
     }
 }
 
@@ -29,12 +32,6 @@ for (var i = 0; i < closeBtn.length; i++) {
         }
     }
 }
-
-function autoclose(){
-    setTimeout(i, 1000)
-    btns[i].disabled = true;
-}
-(function(i) {  setTimeout(function() {  setTimeout(i, 1000);  }, i * 1000);   })(i);
 
 
 //EMAil validation
