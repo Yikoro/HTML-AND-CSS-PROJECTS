@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Games!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/one_page_website - Copy.css">
+    <script src="JS/one_page_website - Copy.js"></script>
+</head>
+
+<body>
+    <!--Subjects=shooters,rpg,survival-->
+    <header>
+        <div>
+            <h1>Hello! The Webpage for Games!</h1>
+        </div>
+        <p>On this webpage I will be expressing my love for games!</p>
+    </header>
+    <!--NAVBAR-->
+    <nav>
+        <ul>
+            <a href="#shooters">
+                <li>Shooter Games</li>
+            </a>
+            <a href="#rpg">
+                <li>Rpg Games</li>
+            </a>
+            <a href="#survival">
+                <li>Survival Games</li>
+            </a>
+        </ul>
+    </nav>
+    <!--Subjects=shooters,rpg,survival-->
+    <!--width="520" height="300"-->
+    <section>
+        <div class="row">
+  <div id="shooters" class="column">
+    <img src="val.jpg" width="520" height="300" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div id="rpg" class="column">
+    <img src="gta.jpg" width="520" height="300" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div id="survival" class="column">
+    <img src="Valheim.jpg" width="520" height="300" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="val.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="gta.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="Valheim.jpg" style="width:100%">
+    </div>
+
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="SMOL" src="val_smol.jpg" onclick="currentSlide(1)" alt="Valorant">
+    </div>
+
+    <div class="column">
+      <img class="SMOL" src="gta_smol.jpg" onclick="currentSlide(2)" alt="Gta">
+    </div>
+
+    <div class="column">
+      <img class="SMOL" src="Valheim_smol.jpg" onclick="currentSlide(3)" alt="Valheim">
+    </div>
+
+    
+  </div>
+</div>
+<iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/Wrdh5HrOCMc?si=UhYSaLiFgNEi5vpB"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" alt="Shooter Gameplay" allowfullscreen></iframe>
+
+<iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/EjFkOjtoEh4?si=fNsVZXzWWkSoi_4o"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" alt="Rpg Gameplay" allowfullscreen></iframe>
+
+<iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/khdRysoiOWA?si=NEQHX-yaaPswfKkz"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" alt="Survival Gameplay" allowfullscreen></iframe>
+    </section>
+    <section>
+        <div>
+            <h3>
+                If you would like tell me what game catagory you like the most?
+            </h3>
+            <div>
+                <form>
+                    <input type="text" placeholder="Game Catagory">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Games! &copy;</p>
+    </footer>
+</body>
+
+</html>
